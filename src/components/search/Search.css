@@ -1,0 +1,80 @@
+.search {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  padding: 0 12rem;
+}
+.searchInput input {
+  width: 20rem;
+  height: 4.2rem;
+  padding: 1.4rem;
+  border-radius: 0.6rem;
+  font-size: 1.1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+.resultSelect:hover,
+.searchInput input:hover {
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.12);
+  border: 2px solid rgb(0, 0, 0);
+}
+.searchInput input::placeholder {
+  font-size: 1.05rem;
+  user-select: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.searchSelect {
+  position: relative;
+}
+
+.resultSelect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem;
+  height: 4.2rem;
+  padding: 1.4rem;
+  border-radius: 0.6rem;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.resultSelect h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  user-select: none;
+}
+
+.searchSelectList {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.8rem;
+  background-color: white;
+}
+.searchSelectList li {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.8rem 7rem 0.8rem 0.8rem;
+  background-color: rgb(244, 244, 244);
+  border-radius: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 380;
+  user-select: none;
+  transition: all 0.3s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.searchSelectList li:hover {
+  background-color: rgb(235, 235, 235);
+}
+.searchSelectList li:last-child {
+  margin-bottom: 0;
+}
