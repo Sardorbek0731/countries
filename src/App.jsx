@@ -16,11 +16,7 @@ function App() {
 
   const { data, isPending, error } = useFetch(
     select
-      ? search
-        ? `https://restcountries.com/v3.1/name/${search}?region=${select}`
-        : `https://restcountries.com/v3.1/region/${select}`
-      : search
-      ? `https://restcountries.com/v3.1/name/${search}`
+      ? `https://restcountries.com/v3.1/region/${select}`
       : "https://restcountries.com/v3.1/all"
   );
 
@@ -28,7 +24,7 @@ function App() {
     <div className="App">
       <Header />
       <Search select={select} setSelect={setSelect} setSearch={setSearch} />
-      <Cards data={data} />
+      <Cards data={data} search={search} />
 
       <div className={error ? "error" : "hidden"}>
         <h1>{error}</h1>
