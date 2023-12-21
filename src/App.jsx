@@ -16,7 +16,9 @@ function App() {
 
   const { data, isPending, error } = useFetch(
     select
-      ? `https://restcountries.com/v3.1/region/${select}`
+      ? select != "All"
+        ? `https://restcountries.com/v3.1/region/${select}`
+        : "https://restcountries.com/v3.1/all"
       : "https://restcountries.com/v3.1/all"
   );
 
