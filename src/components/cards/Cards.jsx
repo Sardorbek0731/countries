@@ -11,7 +11,7 @@ function Cards({ data, search }) {
           return (
             item.name.common.toLowerCase().includes(search.toLowerCase()) && (
               <div className="cardItem" key={i}>
-                <NavLink to="/card">
+                <NavLink to={item.name.common}>
                   <img src={item.flags.svg} alt={item.flags.alt} />
                   <div className="mainInfo">
                     <h1 className="cardTitle">{item.name.common}</h1>

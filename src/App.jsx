@@ -18,7 +18,7 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/card",
+      path: ":name",
       element: <Card />,
     },
   ]);

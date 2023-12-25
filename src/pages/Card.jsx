@@ -1,19 +1,52 @@
 import "./Card.css";
 
+// hooks
+import { useParams } from "react-router-dom";
+import { useFetch } from "../hooks/useFetch";
+
 function Card() {
+  const { name } = useParams();
+
+  const { data, isPending, error } = useFetch(
+    `https://restcountries.com/v3.1/name/${name}`
+  );
+
   return (
     <div className="Card">
-      <div className="flag">
-        <img
-          src="https://flagcdn.com/uz.svg"
-          alt="The flag of Uzbekistan is composed of three equal horizontal bands of turquoise, white with red top and bottom edges, and green. On the hoist side of the turquoise band is a fly-side facing white crescent and twelve five-pointed white stars arranged just outside the crescent opening in three rows comprising three, four and five stars."
-        />
-      </div>
-      <div className="infos">
-        <div className="name">
-          <h1>Uzbekistan</h1>
+      {data && (
+        <>
+          <div className="flag">
+            <img src={data[0].flags.svg} alt={data[0].flags.alt} />
+          </div>
+
+          <div className="infos">
+            <div className="name">
+              <h1>{data[0].name.common}</h1>
+            </div>
+          </div>
+        </>
+      )}
+
+      {
+        <div className={error ? "error" : "hidden"}>
+          <h1>{error}</h1>
         </div>
-      </div>
+      }
+
+      {
+        <div className={isPending ? "loader" : "hidden"}>
+          <div className="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      }
     </div>
   );
 }
