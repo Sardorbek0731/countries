@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Search from "./components/search/Search";
 import Cards from "./components/cards/Cards";
+import Footer from "./components/footer/Footer";
 
 // Hooks
 import { useFetch } from "./components/hooks/useFetch";
@@ -43,6 +44,8 @@ function App() {
           <div></div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

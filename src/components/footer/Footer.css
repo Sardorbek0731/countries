@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem 0;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  right: 0;
+  left: 0;
+  border-top: 1px solid rgba(49, 48, 64, 0.12);
+}
+.footer a,
+.footer h1 {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+  margin-right: 0.5rem;
+}
+.footer a {
+  color: rgb(6, 6, 110);
+}
