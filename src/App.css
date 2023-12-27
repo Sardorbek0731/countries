@@ -4,8 +4,35 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hidden {
   display: none;
+}
+
+.top {
+  position: fixed;
+  bottom: -50%;
+  right: 3rem;
+  z-index: 3;
+  background-color: black;
+  width: 2.7rem;
+  height: 2.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.top.active {
+  bottom: 3rem;
+}
+.top svg {
+  color: white;
+  margin-bottom: 0.1rem;
 }
 
 .lds-roller {
@@ -103,5 +130,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 4;
 }
