@@ -1,13 +1,67 @@
 /* Card */
 .Card {
   display: flex;
+  flex-direction: column;
   padding: 0 12rem;
-  margin-top: 9rem;
+  margin-top: 10rem;
+}
+.back {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.75rem 0.6rem;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 3rem;
+  color: white;
+  background-color: rgb(98, 106, 171);
+  width: 5.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.08rem;
+  border-radius: 0.3rem;
+  transition: all 0.3s;
+}
+.back:hover {
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+.cardItems {
+  display: flex;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.firstColumn {
+  margin-right: 2rem;
+}
+.flag {
+  margin-right: 3rem;
 }
 .flag img {
   width: 30rem;
-  height: auto;
+  height: 17rem;
   object-fit: cover;
   border-radius: 0.7rem;
   box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.12);
+}
+.name h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.7rem;
+}
+.infoValue {
+  margin-left: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.infoItem h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 450;
+  margin-bottom: 0.7rem;
 }
