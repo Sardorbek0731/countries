@@ -4,15 +4,19 @@ import "./Card.css";
 // hooks
 import { useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
+import { useState } from "react";
 
 import { NavLink } from "react-router-dom";
 
 function Card() {
   const { name } = useParams();
+  const [API, setAPI] = useState(`https://restcountries.com/v3.1/name/${name}`);
 
-  const { data, isPending, error } = useFetch(
-    `https://restcountries.com/v3.1/name/${name}`
-  );
+  const { data, isPending, error } = useFetch(API);
+
+  const handleAlpha = (item) => {
+    setAPI(`https://restcountries.com/v3.1/alpha/${item}`);
+  };
 
   return (
     <div className="Card">
@@ -128,7 +132,11 @@ function Card() {
                 {data[0].borders ? (
                   data[0].borders.map((item, i) => {
                     return (
-                      <NavLink to={item} key={i}>
+                      <NavLink
+                        onClick={() => handleAlpha(item)}
+                        to={"/" + item}
+                        key={i}
+                      >
                         <span className="borderItem">{item}</span>
                       </NavLink>
                     );
