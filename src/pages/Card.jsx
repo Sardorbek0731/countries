@@ -127,8 +127,8 @@ function Card() {
               </div>
             </div>
             <div className="borders infoItem">
-              <h3>
-                Border Countries:
+              <h3>Border Countries:</h3>
+              <div className="borderItems">
                 {data[0].borders ? (
                   data[0].borders.map((item, i) => {
                     return (
@@ -144,7 +144,7 @@ function Card() {
                 ) : (
                   <span className="noBorder">No border</span>
                 )}
-              </h3>
+              </div>
             </div>
           </div>
         </div>
