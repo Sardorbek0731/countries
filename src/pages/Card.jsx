@@ -81,7 +81,9 @@ function Card() {
                 <div className="capital infoItem">
                   <h3>
                     Capital:
-                    <span className="infoValue">{data[0].capital[0]}</span>
+                    <span className="infoValue">
+                      {data[0].capital ? data[0].capital[0] : "-"}
+                    </span>
                   </h3>
                 </div>
               </div>

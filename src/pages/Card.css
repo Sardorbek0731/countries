@@ -58,7 +58,11 @@
 .noBorder,
 .infoValue {
   margin-left: 0.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(0, 0, 0, 0.6);
+}
+.noBorder {
+  font-size: 1.1rem;
 }
 .infoItem h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -83,7 +87,10 @@
   width: 75%;
 }
 .borderItems a {
-  padding: 0.7rem 1.05rem;
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 3rem;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
   color: black;
@@ -92,4 +99,8 @@
   font-size: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
+}
+.borderItems a span {
+  display: flex;
+  align-items: center;
 }
