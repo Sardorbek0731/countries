@@ -8,16 +8,16 @@
 .back {
   display: flex;
   justify-content: space-evenly;
-  padding: 0.75rem 0.6rem;
+  padding: 0.75rem 0.65rem;
   align-items: center;
   text-decoration: none;
   margin-bottom: 3rem;
   color: white;
-  background-color: rgb(98, 106, 171);
-  width: 5.5rem;
+  background-color: rgb(40, 42, 54);
+  width: 5.6rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.08rem;
-  border-radius: 0.3rem;
+  border-radius: 2rem;
   transition: all 0.3s;
 }
 .back:hover {
@@ -27,15 +27,13 @@
   display: flex;
 }
 .infos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 100%;
 }
 .row {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 .firstColumn {
   margin-right: 2rem;
@@ -54,7 +52,9 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 1.7rem;
+  margin-bottom: 2rem;
 }
+.noBorder,
 .infoValue {
   margin-left: 0.8rem;
   color: rgba(0, 0, 0, 0.6);
@@ -64,4 +64,24 @@
   font-size: 1.1rem;
   font-weight: 450;
   margin-bottom: 0.7rem;
+}
+
+.borders a {
+  text-decoration: none;
+}
+.borderItem {
+  padding: 0.7rem 1.05rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+}
+.borderItem:first-child {
+  margin-left: 1rem;
+}
+.borderItem:last-child {
+  margin-right: 0;
 }

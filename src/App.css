@@ -15,20 +15,20 @@ html {
 .top {
   position: fixed;
   bottom: -50%;
-  right: 3rem;
+  right: 2rem;
   z-index: 3;
   background-color: black;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 2.6rem;
+  height: 2.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 .top.active {
-  bottom: 3rem;
+  bottom: 2rem;
 }
 .top svg {
   color: white;
@@ -126,9 +126,9 @@ html {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 4;
+  z-index: 6;
 }

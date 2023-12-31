@@ -122,6 +122,22 @@ function Card() {
                 </div>
               </div>
             </div>
+            <div className="borders infoItem">
+              <h3>
+                Border Countries:
+                {data[0].borders ? (
+                  data[0].borders.map((item, i) => {
+                    return (
+                      <NavLink to={item} key={i}>
+                        <span className="borderItem">{item}</span>
+                      </NavLink>
+                    );
+                  })
+                ) : (
+                  <span className="noBorder">No border</span>
+                )}
+              </h3>
+            </div>
           </div>
         </div>
       )}
