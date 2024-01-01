@@ -19,15 +19,15 @@ function Card() {
     localStorage.setItem("alpha", JSON.stringify(item));
   };
 
+  const handleAlpha = (item) => {
+    setLocation("alpha");
+    setAPI(`https://restcountries.com/v3.1/alpha/${item}`);
+  };
+
   const [API, setAPI] = useState(
     `https://restcountries.com/v3.1/${location}/${name}`
   );
   const { data, isPending, error } = useFetch(API);
-
-  const handleAlpha = (item) => {
-    setLocation("alpha");
-    setAPI(`https://restcountries.com/v3.1/${location}/${item}`);
-  };
 
   return (
     <div className="Card">

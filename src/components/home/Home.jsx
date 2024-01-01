@@ -19,6 +19,8 @@ function Home() {
       : "https://restcountries.com/v3.1/all"
   );
 
+  localStorage.setItem("alpha", JSON.stringify("name"));
+
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };
