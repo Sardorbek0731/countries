@@ -10,17 +10,34 @@ import { NavLink } from "react-router-dom";
 
 function Card() {
   const { name } = useParams();
-  const [API, setAPI] = useState(`https://restcountries.com/v3.1/name/${name}`);
 
+  const location = JSON.parse(localStorage.getItem("alpha"))
+    ? JSON.parse(localStorage.getItem("alpha"))
+    : "name";
+
+  const setLocation = (item) => {
+    localStorage.setItem("alpha", JSON.stringify(item));
+  };
+
+  const [API, setAPI] = useState(
+    `https://restcountries.com/v3.1/${location}/${name}`
+  );
   const { data, isPending, error } = useFetch(API);
 
   const handleAlpha = (item) => {
-    setAPI(`https://restcountries.com/v3.1/alpha/${item}`);
+    setLocation("alpha");
+    setAPI(`https://restcountries.com/v3.1/${location}/${item}`);
   };
 
   return (
     <div className="Card">
-      <NavLink className="back" to="/">
+      <NavLink
+        className="back"
+        to="/"
+        onClick={() => {
+          setLocation("name");
+        }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"

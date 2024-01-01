@@ -126,9 +126,49 @@ html {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 6;
+}
+
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 13.25px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 16.5px;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1750px) {
+  html {
+    font-size: 18.5px;
+  }
+}
+
+@media only screen and (min-width: 1830px) {
+  html {
+    font-size: 19.3px;
+  }
+}
+
+@media only screen and (min-width: 1950px) {
+  html {
+    font-size: 21px;
+  }
 }

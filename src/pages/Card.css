@@ -76,7 +76,7 @@
   align-items: flex-start;
 }
 .borders h3 {
-  width: 25%;
+  width: 28%;
 }
 .borders a {
   text-decoration: none;
@@ -84,7 +84,7 @@
 .borderItems {
   display: flex;
   flex-wrap: wrap;
-  width: 75%;
+  width: 72%;
 }
 .borderItems a {
   display: flex;
