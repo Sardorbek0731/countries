@@ -14,10 +14,40 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 0 12rem;
+  width: 100%;
 }
 
 nav h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+}
+.modeItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.modeItem svg {
+  margin-right: 0.5rem;
+  user-select: none;
+}
+.lightMode svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 0.1rem;
+}
+.modeItem h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
 }

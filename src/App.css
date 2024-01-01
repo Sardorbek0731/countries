@@ -12,6 +12,11 @@ html {
   display: none;
 }
 
+.App.darkMode,
+.App.darkMode .footer{
+  background-color: black;
+}
+
 .top {
   position: fixed;
   bottom: -50%;

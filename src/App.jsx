@@ -12,6 +12,14 @@ import Footer from "./components/footer/Footer";
 import Card from "./pages/Card";
 
 function App() {
+  let mode = JSON.parse(localStorage.getItem("mode"))
+    ? JSON.parse(localStorage.getItem("mode"))
+    : "";
+
+  const setMode = (item) => {
+    localStorage.setItem("mode", JSON.stringify(item));
+  };
+
   const routes = createBrowserRouter([
     {
       path: "/",
@@ -24,8 +32,8 @@ function App() {
   ]);
 
   return (
-    <div className="App">
-      <Header />
+    <div className={mode ? `App ${mode}` : "App"}>
+      <Header mode={mode} setMode={setMode} />
       <RouterProvider router={routes} />
       <Footer />
     </div>

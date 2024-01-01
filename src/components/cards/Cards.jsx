@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 function Cards({ data, search }) {
   return (
-    <div className="cards">
+    <main className="cards">
       {data &&
         data.map((item, i) => {
           return (
@@ -33,7 +33,7 @@ function Cards({ data, search }) {
             )
           );
         })}
-    </div>
+    </main>
   );
 }
 

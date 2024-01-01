@@ -4,7 +4,7 @@
   flex-direction: column;
   padding: 0 12rem;
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 .back {
   display: flex;
@@ -47,8 +47,7 @@
 }
 .flag img {
   width: 30rem;
-  height: 17rem;
-  object-fit: cover;
+  height: auto;
   border-radius: 0.7rem;
   box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.12);
 }
