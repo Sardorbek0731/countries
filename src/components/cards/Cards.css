@@ -3,7 +3,7 @@
   width: 100%;
   grid-template-columns: 25% 25% 25% 25%;
   padding: 0 9.6rem 0 12rem;
-  margin-bottom: 5.5rem;
+  padding-bottom: 7rem;
 }
 
 .cardItem a {
