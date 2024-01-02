@@ -12,9 +12,76 @@ html {
   display: none;
 }
 
-.App.darkMode,
-.App.darkMode .footer{
-  background-color: black;
+.App.darkMode {
+  background-color: rgb(35, 35, 66);
+}
+
+.App.darkMode header {
+  background-color: rgb(3, 1, 49);
+}
+.App.darkMode footer {
+  background-color: rgb(2, 1, 29);
+}
+
+.App.darkMode nav h1,
+.App.darkMode .modeItem h3,
+.App.darkMode .modeItem svg,
+.App.darkMode .resultSelect h1,
+.App.darkMode .footer h1,
+.App.darkMode .name h1,
+.App.darkMode .infoItem h3,
+.App.darkMode .noBorder {
+  color: white;
+}
+
+.App.darkMode .back {
+  background-color: white;
+  color: black;
+}
+.App.darkMode .back:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.App.darkMode .infoValue {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.App.darkMode .borderItems a {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.App.darkMode .footer a {
+  color: rgb(72, 72, 255);
+}
+
+.App.darkMode .cardItem {
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.App.darkMode .searchInput input,
+.App.darkMode .resultSelect {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+.App.darkMode .searchInput input:hover {
+  border: 2px solid white;
+}
+
+.App.darkMode .searchInput input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.App.darkMode .top {
+  background-color: white;
+}
+
+.App.darkMode .top svg {
+  color: black;
 }
 
 .top {

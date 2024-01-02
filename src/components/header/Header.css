@@ -35,11 +35,11 @@ nav h1 {
 .modeItem svg {
   margin-right: 0.5rem;
   user-select: none;
+  margin-top: 0.05rem;
 }
 .lightMode svg {
   width: 1.2rem;
   height: 1.2rem;
-  margin-top: 0.1rem;
 }
 .modeItem h3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",

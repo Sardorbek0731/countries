@@ -2,7 +2,11 @@
 // CSS
 import "./Header.css";
 
-function Header({ mode, setMode }) {
+function Header({ mode, setModeVal }) {
+  const setMode = (item) => {
+    localStorage.setItem("mode", JSON.stringify(item));
+  };
+
   return (
     <>
       <header>
@@ -14,6 +18,7 @@ function Header({ mode, setMode }) {
               className={mode ? "hidden" : "darkMode modeItem"}
               onClick={() => {
                 setMode("darkMode");
+                setModeVal("darkMode");
               }}
             >
               <svg
@@ -32,6 +37,7 @@ function Header({ mode, setMode }) {
               className={mode ? "lightMode modeItem" : "hidden"}
               onClick={() => {
                 setMode("");
+                setModeVal("lightMode");
               }}
             >
               <svg

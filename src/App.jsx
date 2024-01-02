@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 // CSS
 import "./App.css";
 
+// React Router DOM
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Components
@@ -11,14 +13,15 @@ import Footer from "./components/footer/Footer";
 // Pages
 import Card from "./pages/Card";
 
+// Hooks
+import { useState } from "react";
+
 function App() {
+  const [modeVal, setModeVal] = useState("");
+
   let mode = JSON.parse(localStorage.getItem("mode"))
     ? JSON.parse(localStorage.getItem("mode"))
     : "";
-
-  const setMode = (item) => {
-    localStorage.setItem("mode", JSON.stringify(item));
-  };
 
   const routes = createBrowserRouter([
     {
@@ -33,7 +36,7 @@ function App() {
 
   return (
     <div className={mode ? `App ${mode}` : "App"}>
-      <Header mode={mode} setMode={setMode} />
+      <Header mode={mode} setModeVal={setModeVal} />
       <RouterProvider router={routes} />
       <Footer />
     </div>
