@@ -69,7 +69,6 @@ html {
 
 .App.darkMode .cardItem {
   background-color: white;
-  border: 1px solid rgb(0, 0, 0);
 }
 
 .App.darkMode .searchInput input,
