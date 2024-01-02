@@ -3,7 +3,7 @@
   justify-content: space-between;
   margin-bottom: 3rem;
   padding: 0 12rem;
-  padding-top: 9rem;
+  padding-top: 8.5rem;
 }
 .searchInput input {
   width: 20rem;
@@ -81,19 +81,15 @@
 
 @media only screen and (max-width: 920px) {
   .search {
-    padding: 9rem 8rem 0 8rem;
+    padding: 8.5rem 8rem 0 8rem;
   }
 }
 @media only screen and (max-width: 720px) {
-  .search {
-    padding: 0 8rem;
-    padding-top: 9rem;
-  }
   .searchInput input {
-    width: 16rem;
+    width: 15rem;
   }
   .resultSelect {
-    width: 13rem;
+    width: 12rem;
   }
   .resultSelect svg {
     width: 1.2rem;
@@ -102,7 +98,6 @@
 }
 @media only screen and (max-width: 560px) {
   .search {
-    padding: 0 4rem;
-    padding-top: 9rem;
+    padding: 8.5rem 4rem 0 4rem;
   }
 }
