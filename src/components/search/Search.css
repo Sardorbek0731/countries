@@ -78,3 +78,20 @@
 .searchSelectList li:last-child {
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: 920px) {
+  .search {
+    padding: 0 3rem;
+    padding-top: 9rem;
+  }
+  .searchInput input {
+    width: 16rem;
+  }
+  .resultSelect {
+    width: 13rem;
+  }
+  .resultSelect svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

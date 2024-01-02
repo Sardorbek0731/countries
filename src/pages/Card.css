@@ -106,3 +106,17 @@
   display: flex;
   align-items: center;
 }
+
+@media only screen and (max-width: 920px) {
+  .Card {
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 10rem 3rem 7rem 3rem;
+  }
+  .cardItems {
+    flex-direction: column;
+  }
+  .flag {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}

@@ -46,3 +46,42 @@
   color: rgb(5, 5, 92);
   margin-right: 0.2rem;
 }
+
+@media only screen and (max-width: 920px) {
+  .cards {
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0 3rem;
+  }
+  .cardItem {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .cards {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding: 0 3rem;
+  }
+  .cardItem {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem;
+  }
+  .cardItem {
+    width: 19rem;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+  .cardItem img {
+    height: 10.2rem;
+  }
+}
