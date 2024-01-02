@@ -36,6 +36,7 @@ function App() {
 
   return (
     <div className={mode ? `App ${mode}` : "App"}>
+      <div className="bgColor"></div>
       <Header mode={mode} setModeVal={setModeVal} />
       <RouterProvider router={routes} />
       <Footer />

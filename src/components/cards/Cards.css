@@ -2,8 +2,8 @@
   display: grid;
   width: 100%;
   grid-template-columns: 25% 25% 25% 25%;
-  padding: 0 9.6rem 0 12rem;
-  padding-bottom: 7rem;
+  padding: 0 10.6rem 0 12rem;
+  padding-bottom: 5.5rem;
 }
 
 .cardItem a {
@@ -11,12 +11,10 @@
 }
 
 .cardItem {
-  width: 16rem;
-  margin: 0 3rem 2rem 0;
+  width: 92%;
   box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.15);
-  border-radius: 0.6rem;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6rem;
 }
 .cardItem img {
   width: 100%;
@@ -49,39 +47,28 @@
 
 @media only screen and (max-width: 920px) {
   .cards {
-    grid-template-columns: 25% 25% 25% 25%;
-    padding: 0 3rem;
-  }
-  .cardItem {
-    margin: 0;
-    margin-bottom: 3rem;
+    padding: 0 6.6rem 0 8rem;
   }
 }
 
 @media only screen and (max-width: 780px) {
   .cards {
     grid-template-columns: 33.3% 33.3% 33.3%;
-    padding: 0 3rem;
   }
-  .cardItem {
-    margin: 0;
-    margin-bottom: 3rem;
+  .cardItem img {
+    height: 9.7rem;
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 560px) {
   .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 3rem;
+    padding: 0 4rem;
+    grid-template-columns: 100%;
   }
   .cardItem {
-    width: 19rem;
-    margin: 0;
-    margin-bottom: 3rem;
+    width: 100%;
   }
   .cardItem img {
-    height: 10.2rem;
+    height: auto;
   }
 }

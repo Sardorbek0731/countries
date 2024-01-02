@@ -107,10 +107,9 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 720px) {
   .Card {
-    grid-template-columns: 25% 25% 25% 25%;
-    padding: 10rem 3rem 7rem 3rem;
+    padding: 10rem 8rem 7rem 8rem;
   }
   .cardItems {
     flex-direction: column;
@@ -118,5 +117,15 @@
   .flag {
     margin-right: 0;
     margin-bottom: 2rem;
+  }
+  .flag img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .Card {
+    padding: 10rem 4rem 7rem 4rem;
   }
 }
