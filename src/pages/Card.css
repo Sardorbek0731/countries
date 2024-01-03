@@ -96,7 +96,6 @@
 .borderItems {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   width: 70%;
 }
 .borderItems a {
@@ -118,7 +117,7 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 1015px) {
+@media only screen and (max-width: 1030px) {
   .borders h3 {
     width: 37%;
   }
@@ -130,6 +129,15 @@
 @media only screen and (max-width: 920px) {
   .Card {
     padding: 10rem 8rem 7rem 8rem;
+  }
+  .back {
+    width: 6.4rem;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+  .back svg {
+    width: 1.2rem;
+    height: 1.2rem;
   }
   .cardItems {
     flex-direction: column;
@@ -156,6 +164,11 @@
   .Card {
     padding: 10rem 6rem 7rem 6rem;
   }
+  .noBorder,
+  .infoItem h3 {
+    font-size: 1.23rem;
+    font-weight: 370;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -168,15 +181,6 @@
   }
   .row {
     margin-bottom: 2.4rem;
-  }
-  .back {
-    width: 6.4rem;
-    font-size: 1.3rem;
-    padding: 0.8rem;
-  }
-  .back svg {
-    width: 1.2rem;
-    height: 1.2rem;
   }
 }
 
