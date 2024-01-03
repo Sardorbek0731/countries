@@ -78,7 +78,7 @@ nav h1 {
   .modeItem svg {
     width: 1.2rem;
     height: 1.2rem;
-    margin-top: 0;
+    margin-top: -0.01rem;
   }
   .lightMode svg {
     width: 1.4rem;
