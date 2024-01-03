@@ -72,6 +72,16 @@
   font-weight: 450;
   margin-bottom: 0.7rem;
 }
+.languages h3 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.languages h3 .infoValues {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 
 .borders {
   display: flex;

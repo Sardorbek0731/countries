@@ -129,18 +129,20 @@ function Card() {
                 <div className="languages infoItem">
                   <h3>
                     Languages:
-                    {Object.values(data[0].languages).map((item, i) => {
-                      return i + 1 !==
-                        Object.values(data[0].languages).length ? (
-                        <span className="infoValue" key={i}>
-                          {item},
-                        </span>
-                      ) : (
-                        <span className="infoValue" key={i}>
-                          {item}
-                        </span>
-                      );
-                    })}
+                    <div className="infoValues">
+                      {Object.values(data[0].languages).map((item, i) => {
+                        return i + 1 !==
+                          Object.values(data[0].languages).length ? (
+                          <span className="infoValue" key={i}>
+                            {item},
+                          </span>
+                        ) : (
+                          <span className="infoValue" key={i}>
+                            {item}
+                          </span>
+                        );
+                      })}
+                    </div>
                   </h3>
                 </div>
               </div>
