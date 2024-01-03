@@ -80,7 +80,6 @@
 .languages h3 .infoValues {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
 .borders {
@@ -90,12 +89,13 @@
 .borders h3 {
   width: 30%;
 }
-.borders a {
+.borders a {  
   text-decoration: none;
 }
 .borderItems {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   width: 70%;
 }
 .borderItems a {
@@ -118,22 +118,23 @@
 }
 
 @media only screen and (max-width: 1030px) {
+  .row {
+    flex-direction: column;
+  }
   .borders h3 {
     width: 37%;
   }
   .borderItems {
     width: 63%;
   }
-  .noBorder,
-  .infoItem h3 {
-    font-size: 0.9rem;
-    font-weight: 370;
-  }
 }
 
 @media only screen and (max-width: 920px) {
   .Card {
     padding: 10rem 8rem 7rem 8rem;
+  }
+  .row {
+    flex-direction: row;
   }
   .back {
     width: 6.4rem;
@@ -195,7 +196,7 @@
   }
   .noBorder,
   .infoItem h3 {
-    font-size: 1.28rem;
+    font-size: 1.32rem;
     font-weight: 370;
   }
 }
