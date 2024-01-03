@@ -68,7 +68,7 @@
 }
 .infoItem h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.02rem;
   font-weight: 450;
   margin-bottom: 0.7rem;
 }
@@ -161,5 +161,11 @@
   }
   .borderItems {
     width: 63%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .row {
+    flex-direction: column;
   }
 }
