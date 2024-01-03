@@ -54,6 +54,7 @@
 @media only screen and (max-width: 780px) {
   .cards {
     grid-template-columns: 33.3% 33.3% 33.3%;
+    padding: 0 4.65rem 0 6rem;
   }
   .cardItem img {
     height: 9.7rem;

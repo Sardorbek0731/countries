@@ -84,7 +84,15 @@
     padding: 8.5rem 8rem 0 8rem;
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 780px) {
+  .search {
+    padding: 8.5rem 6rem 0 6rem;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .search {
+    padding: 8.5rem 3rem 0 3rem;
+  }
   .searchInput input {
     width: 15rem;
   }
@@ -94,10 +102,5 @@
   .resultSelect svg {
     width: 1.2rem;
     height: 1.2rem;
-  }
-}
-@media only screen and (max-width: 560px) {
-  .search {
-    padding: 8.5rem 3rem 0 3rem;
   }
 }

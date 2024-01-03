@@ -112,12 +112,6 @@
   .Card {
     padding: 10rem 8rem 7rem 8rem;
   }
-}
-
-@media only screen and (max-width: 720px) {
-  .Card {
-    padding: 10rem 8rem 7rem 8rem;
-  }
   .cardItems {
     flex-direction: column;
   }
@@ -128,6 +122,12 @@
   .flag img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .Card {
+    padding: 10rem 6rem 7rem 6rem;
   }
 }
 
