@@ -87,15 +87,20 @@
     height: auto;
   }
   .mainInfo {
-    padding: 1.8rem 2.1rem 2.1rem 2.3rem;
+    padding: 1.9rem 2.1rem 2.1rem 2.4rem;
   }
   .cardTitle {
     font-size: 2.2rem;
-    margin-bottom: 1.7rem;
+    margin-bottom: 2rem;
   }
   .cardInfo {
     font-size: 1.4rem;
+    font-weight: 340;
     margin-bottom: 0.7rem;
+  }
+  .footer a,
+  .footer h1 {
+    font-size: 1.6rem;
   }
 }
 @media only screen and (max-width: 500px) {
