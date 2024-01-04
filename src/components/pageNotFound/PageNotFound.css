@@ -1,0 +1,28 @@
+.pageNotFound {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pageNotFound_img,
+.noInternet_img {
+  height: auto;
+}
+.pageNotFound_img {
+  width: 39rem;
+}
+.noInternet_img {
+  width: 35rem;
+}
+.pageNotFound h1 {
+  font-size: 2.4rem;
+  color: rgb(102, 102, 157);
+  font-weight: 400;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.pageNotFound p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}

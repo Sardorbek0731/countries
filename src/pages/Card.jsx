@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-key */
 import "./Card.css";
+import PageNotFound from "../components/pageNotFound/PageNotFound";
 
 // hooks
 import { useParams } from "react-router-dom";
@@ -104,7 +105,7 @@ function Card() {
                   </h3>
                 </div>
               </div>
-              <div className="column secondCoumn">
+              <div className="column secondColumn">
                 <div className="tld infoItem">
                   {data[0].tld ? (
                     <h3>
@@ -173,7 +174,7 @@ function Card() {
 
       {
         <div className={error ? "error" : "hidden"}>
-          <h1>{error}</h1>
+          <PageNotFound error={error} />
         </div>
       }
 
