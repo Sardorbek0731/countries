@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./PageNotFound.css";
-import notFound from "../../assets/images/404.jpg";
+import notFound from "../../assets/images/404.png";
 import noInternet from "../../assets/images/noInternet.png";
 
 function PageNotFound({ error }) {

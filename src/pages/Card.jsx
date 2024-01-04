@@ -67,65 +67,38 @@ function Card() {
             <div className="row">
               <div className="column firstColumn">
                 <div className="area infoItem">
-                  <h3>
-                    Area:
-                    <span className="infoValue">{data[0].area} km²</span>
-                  </h3>
+                  <h3>Area:</h3>
+                  <span className="infoValue">{data[0].area} km²</span>
                 </div>
                 <div className="nativeName infoItem">
-                  <h3>
-                    Native Name:
-                    <span className="infoValue">{data[0].name.official}</span>
-                  </h3>
+                  <h3>Native Name:</h3>
+                  <span className="infoValue">{data[0].name.official}</span>
                 </div>
                 <div className="population infoItem">
-                  <h3>
-                    Population:
-                    <span className="infoValue">{data[0].population}</span>
-                  </h3>
+                  <h3>Population:</h3>
+                  <span className="infoValue">{data[0].population}</span>
                 </div>
                 <div className="region infoItem">
-                  <h3>
-                    Region:
-                    <span className="infoValue">{data[0].region}</span>
-                  </h3>
+                  <h3>Region:</h3>
+                  <span className="infoValue">{data[0].region}</span>
                 </div>
                 <div className="subRegion infoItem">
-                  <h3>
-                    Subregion:
-                    <span className="infoValue">{data[0].subregion}</span>
-                  </h3>
+                  <h3>Subregion:</h3>
+                  <span className="infoValue">{data[0].subregion}</span>
                 </div>
                 <div className="capital infoItem">
-                  <h3>
-                    Capital:
-                    <span className="infoValue">
-                      {data[0].capital ? data[0].capital[0] : "-"}
-                    </span>
-                  </h3>
+                  <h3>Capital:</h3>
+                  <span className="infoValue">
+                    {data[0].capital ? data[0].capital[0] : "-"}
+                  </span>
                 </div>
               </div>
               <div className="column secondColumn">
-                <div className="tld infoItem">
-                  {data[0].tld ? (
-                    <h3>
-                      Top Level Domain:
-                      <span className="infoValue">{data[0].tld[0]}</span>
-                    </h3>
-                  ) : (
-                    <h3>
-                      Top Level Domain:
-                      <span className="infoValue">-</span>
-                    </h3>
-                  )}
-                </div>
                 <div className="currencies infoItem">
-                  <h3>
-                    Currencies:
-                    <span className="infoValue">
-                      {Object.values(data[0].currencies)[0].name}
-                    </span>
-                  </h3>
+                  <h3>Currencies:</h3>
+                  <span className="infoValue">
+                    {Object.values(data[0].currencies)[0].name}
+                  </span>
                 </div>
                 <div className="languages infoItem">
                   <h3>

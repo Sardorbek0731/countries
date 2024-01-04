@@ -93,6 +93,13 @@ html {
   color: black;
 }
 
+.App.darkMode .pageNotFound h1 {
+  color: rgb(169, 169, 255);
+}
+.App.darkMode .pageNotFound p {
+  color: white;
+}
+
 .top {
   position: fixed;
   bottom: -50%;
