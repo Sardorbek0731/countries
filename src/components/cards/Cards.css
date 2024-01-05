@@ -75,6 +75,17 @@
   }
 }
 
+@media only screen and (max-width: 690px) {
+  .cardItem img {
+    height: 8.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cardItem img {
+    height: 7.9rem;
+  }
+}
+
 @media only screen and (max-width: 560px) {
   .cards {
     padding: 0 1.2rem 0 3rem;
@@ -101,7 +112,7 @@
 }
 @media only screen and (max-width: 500px) {
   .cards {
-    padding: 0 3rem;
+    padding: 0 5rem;
     grid-template-columns: 100%;
   }
   .cardItem {
@@ -110,5 +121,11 @@
   }
   .cardItem img {
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .cards {
+    padding: 0 3.5rem;
   }
 }

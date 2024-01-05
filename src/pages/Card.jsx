@@ -94,6 +94,19 @@ function Card() {
                 </div>
               </div>
               <div className="column secondColumn">
+                <div className="tld infoItem">
+                  {data[0].tld ? (
+                    <>
+                      <h3>Top Level Domain:</h3>
+                      <span className="infoValue">{data[0].tld[0]}</span>
+                    </>
+                  ) : (
+                    <>
+                      <h3>Top Level Domain:</h3>
+                      <span className="infoValue">-</span>
+                    </>
+                  )}
+                </div>
                 <div className="currencies infoItem">
                   <h3>Currencies:</h3>
                   <span className="infoValue">
@@ -101,23 +114,21 @@ function Card() {
                   </span>
                 </div>
                 <div className="languages infoItem">
-                  <h3>
-                    Languages:
-                    <div className="infoValues">
-                      {Object.values(data[0].languages).map((item, i) => {
-                        return i + 1 !==
-                          Object.values(data[0].languages).length ? (
-                          <span className="infoValue" key={i}>
-                            {item},
-                          </span>
-                        ) : (
-                          <span className="infoValue" key={i}>
-                            {item}
-                          </span>
-                        );
-                      })}
-                    </div>
-                  </h3>
+                  <h3>Languages:</h3>
+                  <div className="langValues">
+                    {Object.values(data[0].languages).map((item, i) => {
+                      return i + 1 !==
+                        Object.values(data[0].languages).length ? (
+                        <span className="infoValue" key={i}>
+                          {item},
+                        </span>
+                      ) : (
+                        <span className="infoValue" key={i}>
+                          {item}
+                        </span>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
